@@ -55,7 +55,7 @@ function applyPatches(node, currentPatches) {
         }
         break
       default:
-        throw new Error('Unknown patch type ' + currentPatch.type)
+        throw new Error(`Unknown patch type ${currentPatch.type}`)
     }
   })
 }
@@ -75,7 +75,7 @@ function reorderChildren(node, moves) {
   let staticNodeList = _.toArray(node.childNodes)
   let maps = {}
 
-  _.each(staticNodeList, function(node) {
+  _.each(staticNodeList, (node) => {
     if (node.nodeType === 1) {
       let key = node.getAttribute('key')
       if (key) {
@@ -84,7 +84,7 @@ function reorderChildren(node, moves) {
     }
   })
 
-  _.each(moves, function(move) {
+  _.each(moves, (move) => {
     let index = move.index
     if (move.type === 0) { // remove item
       if (staticNodeList[index] === node.childNodes[index]) { // maybe have been removed for inserting
@@ -102,3 +102,4 @@ function reorderChildren(node, moves) {
     }
   })
 }
+

@@ -1,9 +1,10 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 applyPatches	/home/xiaoxuan/workspace/vue-cli-test/src/patch.js	/^function applyPatches(node, currentPatches) {$/;"	f	language:JavaScript	function:function
 each	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function each(array, fn) {$/;"	f	language:JavaScript	function:isString
-Element	/home/xiaoxuan/workspace/vue-cli-test/src/element.js	/^}$/;"	c	language:JavaScript
+Element	/home/xiaoxuan/workspace/vue-cli-test/src/element.js	/^  }$/;"	c	language:JavaScript
+from	/home/xiaoxuan/workspace/vue-cli-test/src/index.js	/^import { Element, diff, patch } from '.\/vdom'$/;"	f	language:JavaScript
 index	/home/xiaoxuan/workspace/vue-cli-test/src/patch.js	/^  let walker = {index: 0}$/;"	p	language:JavaScript	class:let
-render	/home/xiaoxuan/workspace/vue-cli-test/src/element.js	/^Element.prototype.render = function() {$/;"	m	language:JavaScript	class:Element
+render	/home/xiaoxuan/workspace/vue-cli-test/src/element.js	/^  Element.prototype.render = function() {$/;"	m	language:JavaScript	class:Element
 reorderChildren	/home/xiaoxuan/workspace/vue-cli-test/src/patch.js	/^function reorderChildren(node, moves) {$/;"	f	language:JavaScript	function:setProps
 return	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function type(obj) {$/;"	c	language:JavaScript
 setAttr	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function setAttr(node, key, value) {$/;"	f	language:JavaScript	function:isString
