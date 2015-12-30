@@ -54,9 +54,10 @@ function setAttr(node, key, value) {
 }
 
 export {
-  isString,
   isArray,
+  isString,
   each,
   toArray,
   setAttr
 }
+

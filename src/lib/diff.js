@@ -6,6 +6,7 @@ export default function diff(oldTree, newTree) {
   let index = 0
   let patches = {}
   dfsWalk(oldTree, newTree, index, patches)
+
   return patches
 }
 
@@ -64,7 +65,7 @@ function diffChildren(oldChildren, newChildren, index, patches, currentPatch) {
 }
 
 function diffProps(oldNode, newNode) {
-  let count = 0
+  let count = 0 // a flag, record whether props change or not
   let oldProps = oldNode.props
   let newProps = newNode.props
 
@@ -93,7 +94,6 @@ function diffProps(oldNode, newNode) {
   if (count === 0) {
     return null
   }
-
   return propsPatches
 }
 

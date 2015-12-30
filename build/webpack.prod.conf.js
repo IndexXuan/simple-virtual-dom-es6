@@ -3,11 +3,6 @@ var config = require('./webpack.base.conf')
 
 config.devtool = 'source-map'
 
-config.vue.loaders = {
-  js: 'babel!eslint'
-}
-
-// http://vuejs.github.io/vue-loader/workflow/production.html
 config.plugins = (config.plugins || []).concat([
   new webpack.DefinePlugin({
     'process.env': {

@@ -35,7 +35,7 @@ function dfsWalk(node, walker, patches) {
 }
 
 function applyPatches(node, currentPatches) {
-  _.each(currentPatches, function(currentPatch) {
+  _.each(currentPatches, (currentPatch) => {
     switch (currentPatch.type) {
       case REPLACE:
         node.parentNode.replaceChild(currentPatch.node.render(), node)
@@ -62,7 +62,7 @@ function applyPatches(node, currentPatches) {
 
 function setProps(node, props) {
   for (let key in props) {
-    if (props[key] === void 666) {
+    if (props[key] === void 0) {
       node.removeAttribute(key)
     } else {
       let value = props[key]

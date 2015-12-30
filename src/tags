@@ -1,13 +1,2 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
-applyPatches	/home/xiaoxuan/workspace/vue-cli-test/src/patch.js	/^function applyPatches(node, currentPatches) {$/;"	f	language:JavaScript	function:function
-each	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function each(array, fn) {$/;"	f	language:JavaScript	function:isString
-Element	/home/xiaoxuan/workspace/vue-cli-test/src/element.js	/^  }$/;"	c	language:JavaScript
-from	/home/xiaoxuan/workspace/vue-cli-test/src/index.js	/^import { Element, diff, patch } from '.\/vdom'$/;"	f	language:JavaScript
-index	/home/xiaoxuan/workspace/vue-cli-test/src/patch.js	/^  let walker = {index: 0}$/;"	p	language:JavaScript	class:let
-render	/home/xiaoxuan/workspace/vue-cli-test/src/element.js	/^  Element.prototype.render = function() {$/;"	m	language:JavaScript	class:Element
-reorderChildren	/home/xiaoxuan/workspace/vue-cli-test/src/patch.js	/^function reorderChildren(node, moves) {$/;"	f	language:JavaScript	function:setProps
-return	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function type(obj) {$/;"	c	language:JavaScript
-setAttr	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function setAttr(node, key, value) {$/;"	f	language:JavaScript	function:isString
-toArray	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^function toArray(listLike) {$/;"	f	language:JavaScript	function:isString
-toString	/home/xiaoxuan/workspace/vue-cli-test/src/util.js	/^  return Object.prototype.toString.call(obj).replace(\/\\[object\\s|\\]\/g, '')$/;"	m	language:JavaScript	class:return
-type	/home/xiaoxuan/workspace/vue-cli-test/src/diff.js	/^    let reorderPatch = { type: patch.REORDER, moves: diffs.moves }$/;"	p	language:JavaScript	class:dfsWalk.let
+from	/home/xiaoxuan/workspace/simple-virtual-dom-es6/src/index.js	/^import { Element, diff, patch } from '.\/lib\/vdom'$/;"	f	language:JavaScript

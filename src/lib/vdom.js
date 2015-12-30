@@ -1,7 +1,5 @@
 /**
-  File   : patch.js
-  Author : IndexXuan(https://github.com/IndexXuan)
-  Mail   : indexxuan@gmail.com
+  File   : vdom.js
   Date   : 2015年12月29日 星期二 17时55分17秒
 */
 

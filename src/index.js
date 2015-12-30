@@ -1,11 +1,9 @@
 /**
   File   : index.js
-  Author : IndexXuan(https://github.com/IndexXuan)
-  Mail   : indexxuan@gmail.com
   Date   : 2015年12月29日 星期二 08时30分45秒
 */
 
-import { Element, diff, patch } from './vdom'
+import { Element, diff, patch } from './lib/vdom'
 
 // 包装Element Class
 let el = function(tagName, props, children) {

@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# vue-cli-test
+# simple virtual dom  
 
-> test for vue-cli
+> also seed project for es6 stack and env (with the help of webpack and babel)
 
 ## Build Setup
 
@@ -19,7 +18,4 @@ npm run build
 npm test
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# simple-virtual-dom-es6
->>>>>>> f7c472177a2866d74a1c16c8ce6f344a1d24c665
+thanks [livoras's simple-virtual-dom project](http://github.com/livoras/simple-virtual-dom).
