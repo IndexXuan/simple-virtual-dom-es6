@@ -8,6 +8,7 @@
     "test": "karma start build/karma.conf.js --single-run"
   },
   "dependencies": {
+    "codecov.io": "^0.1.6",
     "list-diff2": "^0.1.4"
   },
   "devDependencies": {

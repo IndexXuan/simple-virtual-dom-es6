@@ -55,10 +55,10 @@ describe('Test Element Class', () => {
     ])
 
     // render the root and append it to dom
-    const rootElement = root.render()
+    let rootElement = root.render()
     document.body.appendChild(rootElement)
 
-    const renderedHTML = document.getElementById('root')
+    let renderedHTML = document.getElementById('root')
     expect( renderedHTML.getAttribute('dataStyle') ).toEqual('color: red')
     expect( renderedHTML.childNodes.length ).toBe(3)
   })
