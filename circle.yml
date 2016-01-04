@@ -3,5 +3,7 @@ machine:
     version: 5
 
 test:
+  post:
+    - pip install codecov && codecov
   override:
     - npm run test

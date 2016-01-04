@@ -30,8 +30,9 @@
     "window": true,
     "document": true,
     "describe": true,
-    "before": true,
     "it": true,
+    "jasmine": true,
+    "spyOn": true,
     "expect": true
   },
 

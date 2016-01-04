@@ -3,7 +3,6 @@
   Date   : 2016年01月03日 星期日 10时53分09秒
 */
 
-/*globals spyOn */
 import Element from '../../src/lib/element'
 import diff from '../../src/lib/diff'
 import patch from '../../src/lib/patch'
@@ -29,9 +28,12 @@ describe('Test patch function', () => {
     let dom = root.render()
     let patches = diff(root, root2)
 
+    spyOn(dom.childNodes[1], 'setAttribute')
     patch(dom, patches)
 
-    expect( dom.childNodes[1].getAttribute('name') ).toEqual('Jerry')
+    // expect( dom.childNodes[1].getAttribute('name') ).toEqual('Jerry')
+    expect( dom.childNodes[1].setAttribute ).toHaveBeenCalledWith('name', 'Jerry')
+    expect( dom.childNodes[1].setAttribute.calls.count() ).toBe(1)
   })
 
   it('Attributes removing', () => {
@@ -49,10 +51,12 @@ describe('Test patch function', () => {
 
     let dom = root.render()
     let patches = diff(root, root2)
+    spyOn(dom, 'removeAttribute')
 
     patch(dom, patches)
 
-    expect( dom.childNodes[1].getAttribute('id') ).toEqual(null)
+    // expect( dom.childNodes[1].getAttribute('id') ).toEqual(null)
+    expect( dom.removeAttribute.calls.count() ).toBe(1)
   })
 
   it('Text replacing', () => {
@@ -90,8 +94,10 @@ describe('Test patch function', () => {
 
     let dom = root.render()
     var patches = diff(root, root2)
+    spyOn(dom, 'replaceChild')
     patch(dom, patches)
-    expect( dom.childNodes[1].tagName ).toBe('P')
+    // expect( dom.childNodes[1].tagName ).toBe('P')
+    expect( dom.replaceChild.calls.count() ).toBe(1)
   })
 
   it('Nodes reordering', () => {
@@ -116,7 +122,8 @@ describe('Test patch function', () => {
     spyOn(dom, 'removeChild')
     let patches = diff(root, root2)
     patch(dom, patches)
-    expect( dom.insertBefore).toHaveBeenCalled()
+    // expect( dom.insertBefore).toHaveBeenCalled()
+    expect(dom.insertBefore.calls.count() ).toBe(2)
     expect( dom.removeChild ).not.toHaveBeenCalled()
   })
 
@@ -179,7 +186,8 @@ describe('Test patch function', () => {
     dom.removeChild(dom.childNodes[3])
     let patches = diff(root, root2)
     patch(dom, patches)
-    expect( dom.removeChild ).toHaveBeenCalled()
+    // expect( dom.removeChild ).toHaveBeenCalled()
+    expect( dom.removeChild.calls.count() ).toBe(1)
   })
 
   it('When child nodes are the same, remove it', () => {
@@ -202,7 +210,8 @@ describe('Test patch function', () => {
     spyOn(dom, 'removeChild')
     let patches = diff(root, root2)
     patch(dom, patches)
-    expect( dom.removeChild ).toHaveBeenCalled()
+    // expect( dom.removeChild ).toHaveBeenCalled()
+    expect( dom.removeChild.calls.count() ).toBe(1)
   })
 
   it('Patching input & textarea', () => {

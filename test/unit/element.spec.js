@@ -58,9 +58,19 @@ describe('Test Element Class', () => {
     let rootElement = root.render()
     document.body.appendChild(rootElement)
 
+    // spyOn(rootElement, "setAttribute")
+    // spyOn(rootElement, "appendChild")
+    // spyOn(document, "createElement")
+    // spyOn(document, "createTextNode")
+
     let renderedHTML = document.getElementById('root')
     expect( renderedHTML.getAttribute('dataStyle') ).toEqual('color: red')
     expect( renderedHTML.childNodes.length ).toBe(3)
+
+    // expect( rootElement.setAttribute ).toHaveBeenCalledWith('dataStyle', 'color: red')
+    // expect( document.createElement.calls.count() ).toBe(4)
+    // expect( document.createTextNode ).toHaveBeenCalledWith('Fuck')
+    // expect( rootElement.appendChild.calls.count() ).toBe(4)
   })
   
   it('Using count to get DFS index is right', () => {
