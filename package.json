@@ -14,11 +14,10 @@
   "homepage": "http://github.com/IndexXuan/simple-virtual-dom-es6",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --config build/webpack.dev.conf.js",
-    "lint": "eslint src/**/*.js test/**/*.js build/**.js",
-    "build": "webpack --progress --hide-modules --config build/webpack.prod.conf.js",
+    "build": "npm run lint && webpack --progress --hide-modules --config build/webpack.prod.conf.js",
+    "lint": "eslint src/** test/** build/**.js",
     "cover": "karma start build/karma.cover.conf.js --single-run",
-    "test-unit": "karma start build/karma.unit.conf.js --single-run",
-    "test": "npm run lint && npm run cover && npm run build && npm run test-unit"
+    "test": "karma start build/karma.unit.conf.js --single-run"
   },
   "dependencies": {
     "list-diff2": "^0.1.4"
