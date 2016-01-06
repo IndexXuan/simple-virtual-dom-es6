@@ -3,7 +3,7 @@
   Date   : 2016年01月03日 星期日 08时32分09秒
 */
 
-import Element from '../../src/lib/element'
+import Element from '../../src/lib/Element'
 import diff from '../../src/lib/diff'
 import patch from '../../src/lib/patch'
 

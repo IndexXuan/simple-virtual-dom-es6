@@ -3,7 +3,7 @@
   Date   : 2016年01月01日 星期五 15时42分01秒
 */
 
-import Element from '../../src/lib/element'
+import Element from '../../src/lib/Element'
 
 let el = function(...args) {
   return new Element(...args)
@@ -46,7 +46,6 @@ describe('Test Element Class', () => {
   })
 
   it('Calling render method', () => {
-
     let props = {id: 'root', dataStyle: 'color: red'}
     let root = el('ul', props, [
       el('li'),

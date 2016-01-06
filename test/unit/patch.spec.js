@@ -3,7 +3,7 @@
   Date   : 2016年01月03日 星期日 10时53分09秒
 */
 
-import Element from '../../src/lib/element'
+import Element from '../../src/lib/Element'
 import diff from '../../src/lib/diff'
 import patch from '../../src/lib/patch'
 
@@ -12,6 +12,7 @@ function el(...args) {
 }
 
 describe('Test patch function', () => {
+
   it('Attribute adding', () => {
     let root = el('div', {id: 'content'}, [
       el('p', ['I love you']),
@@ -231,27 +232,27 @@ describe('Test patch function', () => {
     expect( dom.childNodes[1].value ).toEqual('new string')
   })
 
-  // it('Test nodeValue for IE', () => {
-    // let root = el('div', {}, [
-      // el('input', {value: 'old string'}, null),
-      // el('textarea', {value: 'old string'}, null),
-      // 'ok this is a string'
-    // ])
-    // let dom = root.render()
-    // let text = dom.childNodes[2]
-    // expect( text.textContent ).toEqual('ok this is a string')
-    // delete text.textContent
+  xit('Test nodeValue for IE', () => {
+    let root = el('div', {}, [
+      el('input', {value: 'old string'}, null),
+      el('textarea', {value: 'old string'}, null),
+      'ok this is a string'
+    ])
+    let dom = root.render()
+    let text = dom.childNodes[2]
+    expect( text.textContent ).toEqual('ok this is a string')
+    delete text.textContent
 
-    // let root2 = el('div', {}, [
-      // el('input', {value: 'old string'}, null),
-      // el('textarea', {value: 'old string'}, null),
-      // 'ok this is a string2'
-    // ])
+    let root2 = el('div', {}, [
+      el('input', {value: 'old string'}, null),
+      el('textarea', {value: 'old string'}, null),
+      'ok this is a string2'
+    ])
 
-    // let patches = diff(root, root2)
-    // patch(dom, patches)
-    // expect( text.nodeValue ).toEqual('ok this is a string2')
-  // })
+    let patches = diff(root, root2)
+    patch(dom, patches)
+    expect( text.nodeValue ).toEqual('ok this is a string2')
+  })
 
 })
 

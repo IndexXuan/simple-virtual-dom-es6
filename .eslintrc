@@ -30,7 +30,9 @@
     "window": true,
     "document": true,
     "describe": true,
+    "xdescribe": true,
     "it": true,
+    "xit": true,
     "jasmine": true,
     "spyOn": true,
     "expect": true

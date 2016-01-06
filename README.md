@@ -5,7 +5,7 @@
   <a href="https://codecov.io/github/IndexXuan/simple-virtual-dom-es6?branch=master"><img src="https://codecov.io/github/IndexXuan/simple-virtual-dom-es6/coverage.svg?branch=dev" alt="Coverage Status"></a>
   <br>
   <br>
-  <a href="https://github.com/feross/standard"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="js-standard-style"></a>
+  <a href="https://github.com/airbnb/javascript"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="js-standard-style"></a>
 </p>
 
 >also seed project for es6 dev stack (with the help of webpack and babel)
@@ -26,7 +26,8 @@ npm run build
 npm test
 ```
 
-refs:  
+##refs:  
+
 [React Reconciliation](http://facebook.github.io/react/docs/reconciliation.html)  
 [本人翻译的中文版](./React-Reconciliation.md)   
 

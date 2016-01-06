@@ -3,7 +3,7 @@
   Date   : 2015年12月29日 星期二 08时30分45秒
 */
 
-import { Element, diff, patch } from './lib/vdom'
+import { Element, diff, patch } from './lib/vDOM'
 
 // 包装Element Class
 let el = function(tagName, props, children) {
