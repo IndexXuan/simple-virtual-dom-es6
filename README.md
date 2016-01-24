@@ -2,7 +2,6 @@
 
 <p align="center">
   <a href="https://circleci.com/gh/IndexXuan/simple-virtual-dom-es6/tree/master"><img src="https://circleci.com/gh/IndexXuan/simple-virtual-dom-es6/tree/master.svg?style=shield" alt="Build Status"></a>
-  <a href="https://codecov.io/github/IndexXuan/simple-virtual-dom-es6?branch=master"><img src="https://codecov.io/github/IndexXuan/simple-virtual-dom-es6/coverage.svg?branch=dev" alt="Coverage Status"></a>
   <br>
   <br>
   <a href="https://github.com/airbnb/javascript"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="js-standard-style"></a>
@@ -29,7 +28,7 @@ npm test
 ##refs:  
 
 [React Reconciliation](http://facebook.github.io/react/docs/reconciliation.html)  
-[本人翻译的中文版](./React-Reconciliation.md)   
+[本人翻译的中文版](./refs/React-Reconciliation.md)   
 
 thanks [livoras's simple-virtual-dom project](http://github.com/livoras/simple-virtual-dom).
 
