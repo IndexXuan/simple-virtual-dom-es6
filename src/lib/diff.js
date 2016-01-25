@@ -15,14 +15,19 @@ function dfsWalk(oldNode, newNode, index, patches) {
 
   // node is removed
   if (newNode === null) {
+
     // will be removed when perform reordering, so has no needs to do anthings in here
+    
   // textNode content replacing
   } else if (_.isString(oldNode) && _.isString(newNode)) {
+
     if (newNode !== oldNode) {
       currentPatch.push({ type: patch.TEXT, content: newNode })
     }
+
   // nodes are the same, diff its props and children
   } else if (
+
       oldNode.tagName === newNode.tagName &&
       oldNode.key === newNode.key
     ) {
@@ -33,6 +38,7 @@ function dfsWalk(oldNode, newNode, index, patches) {
     }
     // diff children
     diffChildren(oldNode.children, newNode.children, index, patches, currentPatch)
+
   // nodes are not the same, replace the old node with new node
   } else {
     currentPatch.push({ type: patch.REPLACE, node: newNode })
