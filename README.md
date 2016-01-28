@@ -2,10 +2,14 @@
 
 <p align="center">
   <a href="https://circleci.com/gh/IndexXuan/simple-virtual-dom-es6/tree/master"><img src="https://circleci.com/gh/IndexXuan/simple-virtual-dom-es6/tree/master.svg?style=shield" alt="Build Status"></a>
+  <img src="https://img.shields.io/badge/Vim-Best%20Editor-green.svg" alt="Vim Best Editor" />
   <br>
   <br>
   <a href="https://github.com/airbnb/javascript"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="js-standard-style"></a>
 </p>
+
+## Keyword
+virtual-dom, es6, babel, webpack, eslint, karma, pre-commit hooks
 
 >also seed project for es6 dev stack (with the help of webpack and babel)
 
